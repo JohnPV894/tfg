@@ -1,0 +1,341 @@
+.detail-page {
+  padding: 16px 0 32px;
+}
+
+.detail-main-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.15fr;
+  gap: 24px;
+}
+
+.detail-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-gallery__badges {
+  display: flex;
+  gap: 6px;
+}
+
+.detail-gallery__stage {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  height: 320px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-gallery__stage img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.detail-gallery__meta-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.detail-gallery__meta-strip strong {
+  color: var(--color-navy);
+}
+
+.detail-info__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.detail-category-chip {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: #e6f2fa;
+  color: var(--color-blue);
+}
+
+.detail-info h1 {
+  margin: 0 0 10px;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--color-navy);
+}
+
+.detail-short-desc {
+  margin: 0 0 14px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.detail-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.detail-highlights li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-navy);
+}
+
+.detail-highlights svg {
+  color: var(--color-blue);
+}
+
+.detail-buy-box {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+.detail-buy-box__price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.detail-buy-box__price-row > div {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detail-price {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.detail-old-price {
+  font-size: 0.96rem;
+  color: var(--color-text-light);
+  text-decoration: line-through;
+}
+
+.detail-vat-note {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+}
+
+.detail-buy-box__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.qty-visual-control {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+}
+
+.qty-visual-control button {
+  width: 32px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--color-navy);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-visual-control span {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.detail-buy-btn {
+  flex: 1;
+  min-width: 165px;
+}
+
+.detail-secondary-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.detail-secondary-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.82rem;
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.detail-secondary-actions button:hover {
+  text-decoration: underline;
+}
+
+.detail-logistics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.detail-logistics__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+}
+
+.detail-logistics__item svg {
+  color: var(--color-blue);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.detail-logistics__item strong {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-navy);
+}
+
+.detail-logistics__item span {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+/* Pestañas */
+.detail-tabs-card {
+  margin-top: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.detail-tabs-nav {
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-alt);
+  overflow-x: auto;
+}
+
+.detail-tab-btn {
+  border: none;
+  background: transparent;
+  padding: 11px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.detail-tab-btn.is-active {
+  color: var(--color-navy);
+  background: var(--color-white);
+  border-bottom-color: var(--color-blue);
+}
+
+.detail-tabs-panel {
+  padding: 18px;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.specs-table th {
+  width: 34%;
+  text-align: left;
+  padding: 9px 12px;
+  font-size: 0.85rem;
+  color: var(--color-navy);
+  background: var(--color-surface-alt);
+}
+
+.specs-table td {
+  padding: 9px 12px;
+  font-size: 0.86rem;
+}
+
+.detail-panel-text h3 {
+  margin: 0 0 8px;
+  color: var(--color-navy);
+}
+
+.detail-panel-text p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 960px) {
+  .detail-main-card {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-logistics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .specs-table th,
+  .specs-table td {
+    display: block;
+    width: 100%;
+  }
+}

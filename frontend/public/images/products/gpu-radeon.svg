@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#ffffff"/>
+  <defs>
+    <radialGradient id="s" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#00204a" stop-opacity="0.24"/><stop offset="100%" stop-color="#00204a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="shroud" x1="90" y1="210" x2="510" y2="390" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#090d16"/></linearGradient>
+  </defs>
+  <ellipse cx="300" cy="445" rx="220" ry="26" fill="url(#s)"/>
+  <g transform="translate(300 295) rotate(-7)">
+    <rect x="-220" y="-85" width="440" height="170" rx="14" fill="url(#shroud)" stroke="#475569" stroke-width="3"/>
+    <rect x="-235" y="-92" width="16" height="196" rx="3" fill="#94a3b8"/>
+    <circle cx="-95" cy="0" r="64" fill="#0f172a" stroke="#fdb44b" stroke-width="3"/>
+    <circle cx="95" cy="0" r="64" fill="#0f172a" stroke="#fdb44b" stroke-width="3"/>
+    <circle cx="-95" cy="0" r="18" fill="#00204a" stroke="#00bbf0" stroke-width="2.5"/>
+    <circle cx="95" cy="0" r="18" fill="#00204a" stroke="#00bbf0" stroke-width="2.5"/>
+    <rect x="-150" y="-76" width="300" height="8" rx="4" fill="#00bbf0"/>
+    <rect x="-160" y="84" width="190" height="14" rx="2" fill="#eab308"/>
+  </g>
+</svg>
+

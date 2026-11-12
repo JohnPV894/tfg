@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#ffffff"/>
+  <defs>
+    <radialGradient id="mouseShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00204a" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00204a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mouseShell" x1="180" y1="100" x2="420" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#273449"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="mouseHighlight" x1="220" y1="110" x2="360" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#475569" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="308" cy="505" rx="135" ry="26" fill="url(#mouseShadow)"/>
+  <g transform="translate(300 295) rotate(-14)">
+    <!-- Main Ergonomic Body -->
+    <path d="M-28,-190 C32,-195 85,-165 102,-105 C118,-48 112,48 96,122 C82,182 40,208 -6,208 C-56,208 -95,172 -106,105 C-116,42 -110,-58 -92,-118 C-78,-165 -58,-188 -28,-190 Z"
+          fill="url(#mouseShell)" stroke="#334155" stroke-width="2.5"/>
+    <!-- Left/Right button split -->
+    <path d="M-92,-108 C-52,-102 -28,-102 0,-102 C35,-102 68,-104 98,-112" stroke="#020617" stroke-width="4" fill="none"/>
+    <line x1="-2" y1="-190" x2="-2" y2="-102" stroke="#020617" stroke-width="4"/>
+    <!-- Sculpted highlight -->
+    <path d="M-74,-80 C-68,20 -58,125 -22,180 C15,175 68,145 78,45 C86,-30 74,-82 44,-95 C10,-92 -42,-90 -74,-80 Z"
+          fill="url(#mouseHighlight)"/>
+    <!-- Side thumb buttons -->
+    <rect x="-108" y="-42" width="10" height="36" rx="4" fill="#334155" stroke="#00bbf0" stroke-width="1"/>
+    <rect x="-109" y="2" width="10" height="34" rx="4" fill="#334155" stroke="#00bbf0" stroke-width="1"/>
+    <!-- Scroll Wheel Housing + Cyan Glow -->
+    <rect x="-13" y="-158" width="22" height="48" rx="10" fill="#020617"/>
+    <rect x="-9" y="-152" width="14" height="36" rx="7" fill="#1e293b" stroke="#00bbf0" stroke-width="2.5"/>
+    <line x1="-6" y1="-142" x2="2" y2="-142" stroke="#00bbf0" stroke-width="2"/>
+    <line x1="-6" y1="-134" x2="2" y2="-134" stroke="#00bbf0" stroke-width="2"/>
+    <line x1="-6" y1="-126" x2="2" y2="-126" stroke="#00bbf0" stroke-width="2"/>
+    <!-- Subtle DPI indicator & palm accent -->
+    <circle cx="-2" cy="-86" r="3.5" fill="#fdb44b"/>
+    <path d="M-24,95 Q-2,82 20,95 Q-2,115 -24,95 Z" fill="#00bbf0" fill-opacity="0.35"/>
+  </g>
+</svg>
+

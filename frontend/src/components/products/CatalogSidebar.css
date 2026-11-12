@@ -1,0 +1,135 @@
+.catalog-sidebar {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+}
+
+.catalog-sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 10px;
+}
+
+.catalog-sidebar__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-navy);
+}
+
+.catalog-sidebar__title h3 {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.visual-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.sidebar-group {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sidebar-group:last-of-type {
+  border-bottom: none;
+}
+
+.sidebar-group h4 {
+  margin: 0 0 8px;
+  font-size: 0.84rem;
+  color: var(--color-navy);
+}
+
+.sidebar-cat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sidebar-cat-btn {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.83rem;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.sidebar-cat-btn:hover {
+  background: var(--color-surface-alt);
+  color: var(--color-blue);
+}
+
+.sidebar-cat-btn.is-active {
+  background: #e6f2fa;
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+.price-inputs-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.price-inputs-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.74rem;
+  color: var(--color-text-muted);
+}
+
+.price-inputs-row input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+}
+
+.sidebar-checks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-check-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.sidebar-check-item input {
+  accent-color: var(--color-blue);
+}
+
+.sidebar-actions {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-actions .btn {
+  width: 100%;
+}

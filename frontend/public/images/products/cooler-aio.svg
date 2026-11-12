@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#ffffff"/>
+  <defs>
+    <radialGradient id="s" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#00204a" stop-opacity="0.22"/><stop offset="100%" stop-color="#00204a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="rad" x1="90" y1="120" x2="510" y2="270" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1e293b"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+  </defs>
+  <ellipse cx="300" cy="495" rx="190" ry="24" fill="url(#s)"/>
+  <g transform="translate(300 280)">
+    <rect x="-215" y="-155" width="430" height="135" rx="12" fill="url(#rad)" stroke="#334155" stroke-width="3"/>
+    <g fill="#090d16" stroke="#00bbf0" stroke-opacity="0.7" stroke-width="2.5">
+      <circle cx="-130" cy="-88" r="50"/><circle cx="0" cy="-88" r="50"/><circle cx="130" cy="-88" r="50"/>
+    </g>
+    <g fill="#1e293b">
+      <circle cx="-130" cy="-88" r="14"/><circle cx="0" cy="-88" r="14"/><circle cx="130" cy="-88" r="14"/>
+    </g>
+    <path d="M-150 -20 C-150 95 -80 120 -35 120" stroke="#1e293b" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-118 -20 C-118 75 -65 98 -30 98" stroke="#334155" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="35" cy="112" r="68" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+    <circle cx="35" cy="112" r="52" fill="#00204a" stroke="#00bbf0" stroke-width="3"/>
+    <circle cx="35" cy="112" r="34" fill="none" stroke="#fdb44b" stroke-width="2.5"/>
+    <rect x="20" y="106" width="30" height="12" rx="4" fill="#00bbf0"/>
+  </g>
+</svg>
+
