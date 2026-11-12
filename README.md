@@ -1,44 +1,105 @@
-# CoreByte — Demo Visual Tienda Online de Informática (TFG DAW)
+# CoreByte
 
-Demo visual navegable de comercio electrónico especializado en ordenadores, componentes informáticos y periféricos.
+Tienda online de ordenadores, componentes informáticos y periféricos desarrollada con React, Node.js, Express y MongoDB.
 
-## Alcance del proyecto
-- **Única funcionalidad real**: conexión a MongoDB con Mongoose y lectura de productos mediante una API REST en Express (`GET /api/products`, `GET /api/products/:id`, `GET /api/health`), renderizados en React.
-- **Gestión real de fallos**: si MongoDB o el backend no están disponibles, la interfaz muestra un mensaje de error claro sin sustituir los productos por datos ficticios.
-- **Resto exclusivamente visual**: buscador, filtros laterales, ordenación, mega-menú de categorías, botones de añadir al carrito, vista de carrito con artículos de ejemplo y vistas de login/registro.
+## Requisitos previos
 
-## Estructura
-- `backend/`: API REST Node.js + Express + Mongoose (`.env` ya configurado para MongoDB local en `mongodb://127.0.0.1:27017/tfg_tienda`).
-- `frontend/`: Aplicación React + Vite + React Router + CSS3.
+- Node.js (v18 o superior) y npm
+- Acceso a una base de datos MongoDB (instalación local o cuenta en MongoDB Atlas)
 
-## Variables de entorno
-### `backend/.env`
+## Instalación
+
+1. Clonar el repositorio y entrar en la carpeta del proyecto:
+
+```bash
+git clone https://github.com/JohnPV894/tfg.git
+cd tfg
+```
+
+2. Instalar las dependencias del backend:
+
+```bash
+cd backend
+npm install
+```
+
+3. Instalar las dependencias del frontend:
+
+```bash
+cd ../frontend
+npm install
+```
+
+## Configuración
+
+1. Crear el archivo de variables de entorno del backend a partir de la plantilla `backend/.env.example`:
+
+```bash
+cd backend
+cp .env.example .env
+```
+
+Editar `backend/.env` con tus datos de conexión:
+
 ```env
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/tfg_tienda
 CLIENT_ORIGIN=http://localhost:5173
 ```
 
-### `frontend/.env`
-```env
-VITE_API_URL=http://localhost:5000/api
+2. Crear el archivo de variables de entorno del frontend a partir de `frontend/.env.example`:
+
+```bash
+cd ../frontend
+cp .env.example .env
 ```
 
-## Cómo ejecutar en desarrollo
-1. **Poblar la base de datos (opcional si ya tienes productos en `tfg_tienda.products`)**:
-   ```bash
-   cd backend
-   npm run seed
-   ```
-2. **Arrancar el backend**:
-   ```bash
-   cd backend
-   npm run dev
-   ```
-3. **Arrancar el frontend**:
-   ```bash
-   cd frontend
-   npm run dev
-   ```
-4. Abrir `http://localhost:5173` en el navegador.
+Contenido de `frontend/.env`:
 
+```env
+VITE_API_URL=/api
+```
+
+## Cargar productos de ejemplo (opcional)
+
+Si la base de datos está vacía, puedes insertar los productos iniciales ejecutando desde `backend/`:
+
+```bash
+npm run seed
+```
+
+## Ejecución en desarrollo
+
+Abre dos terminales en la raíz del proyecto:
+
+- **Backend** (puerto `5000`):
+
+```bash
+cd backend
+npm run dev
+```
+
+- **Frontend** (puerto `5173`):
+
+```bash
+cd frontend
+npm run dev
+```
+
+Una vez iniciados ambos servicios, abre `http://localhost:5173` en el navegador.
+
+## Ejecución en producción
+
+Para generar los archivos estáticos del frontend y servir toda la aplicación desde Express en el puerto `5000`:
+
+```bash
+cd frontend
+npm run build
+cd ../backend
+npm start
+```
+
+## Estructura
+
+- `backend/`: API REST con Express y modelos de Mongoose.
+- `frontend/`: aplicación web con React, React Router y Vite.
